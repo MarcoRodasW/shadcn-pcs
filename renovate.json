@@ -1,0 +1,23 @@
+{
+  "extends": ["config:base", "group:recommended", "group:allNonMajor", "group:definitelyTyped"],
+  "schedule": ["before 3am on the first day of the month"],
+  "timezone": "UTC",
+  "platform": "github",
+  "semanticCommits": "enabled",
+  "semanticCommitScope": "deps",
+  "bumpVersion": "patch",
+  "useBaseBranchConfig": "merge",
+  "rebaseWhen": "conflicted",
+  "baseBranches": ["main"],
+  "ignorePaths": ["^\\.(?!js|json|yml|yaml|toml)"],
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch"],
+      "automerge": true
+    }
+  ],
+  "assignees": [
+    "sawa-ko",
+    "taboradeyvi"
+  ]
+}

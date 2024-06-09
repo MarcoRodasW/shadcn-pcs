@@ -1,0 +1,3 @@
+# CODEOWNERS
+__test__/components/component.cy.tsx 
+__test__/e2e/home.cy.ts 
